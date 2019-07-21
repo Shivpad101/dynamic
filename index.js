@@ -3,9 +3,9 @@ var http = require("http");
 var fs = require("fs");
 var url=require("url");
 // 
-var replace = require("./templates/replace.js");
+var replace = require("./replace");
 // json file
-var obj = fs.readFileSync("./dev-data/data.json");
+var obj = fs.readFileSync("./data.json");
 var jsonObj = JSON.parse(obj);
 
 // templates
