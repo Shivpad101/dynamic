@@ -10,13 +10,13 @@ var jsonObj = JSON.parse(obj);
 
 // templates
 var templateProduct = fs
-  .readFileSync("./templates/template-product.html")
+  .readFileSync("./template-products.html")
   .toString();
 var templateCards = fs
-  .readFileSync("./templates/template-card.html")
+  .readFileSync("./template-card.html")
   .toString();
 var templateOverview = fs
-  .readFileSync("./templates/template-overview.html")
+  .readFileSync("././template-overview.html")
   .toString();
   var MakeCard = function(templateCards, json) {
     return replace(templateCards, json);
